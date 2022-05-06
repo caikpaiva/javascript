@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            padding: 20px;
+            font-size: 5em;
+            color: rgb(47, 95, 240);
+            text-shadow: 0px 0px 2px black;
+        }
+        main{
+            border-radius: 30px;
+            margin: 120px auto;
+            text-align: center;
+            width: 350px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.842);
+            box-shadow: 2px 2px 5px black;
+        }
+        body{
+            background-color: rgb(47, 95, 240);           
+        }
+        #txt{
+            width: 100px;
+            text-align: center;
+            font-size: 3em;
+            border-radius: 10px;
+        }
+        #botao{
+            border-radius: 50%;
+            background-color: rgb(47, 95, 240);
+            color: white;
+            width: 50px;
+            font-size: 3em;
+        }
+        #rst{
+            border-radius: 10px;
+            background-color: rgba(13, 102, 13, 0.836);
+            color: white;
+            margin: 20px;
+            padding: 10px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>COUNT</h1>
+
+        <input type="button" id="botao" value="-" onclick="dec()">
+        <input type="text" name="txt" id="txt" value="0">
+        <input type="button" id="botao" value="+" onclick="inc()">
+        <p><input type="button" id="rst" value="RESET" onclick="reset()"></p>
+    </main>
+           
+    <script>
+        var num = Number(document.querySelector(`#txt`).value);
+        //var res = Number(num.value);
+            
+        function reset(){
+            //res = 0;
+            //document.querySelector("#txt").value = res;
+            
+            num = 0;
+            document.querySelector("#txt").value = num;
+        }
+
+        function inc(){
+            //res += 1;
+            //document.querySelector("#txt").value = res;
+            
+            num += 1;
+            document.querySelector("#txt").value = num;
+            
+            //alert(`Acerto: ${res}`);
+            //alert(res.innerHTML = `ERRO: ${num}`);
+            //res.innerHTML = `Numero informado: ${num}`;
+        }
+
+        function dec(){
+            //res -= 1;
+            //document.querySelector("#txt").value = res;
+
+            num -= 1;
+            document.querySelector("#txt").value = num;
+        }
+    </script>
+</body>
+</html>

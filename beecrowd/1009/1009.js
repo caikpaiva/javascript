@@ -1,12 +1,13 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\n');
 
-let func = lines.shift();
-var sal = lines.shift();
-var vend = lines.shift();
+let func = String(lines.shift());
+let sal = parseFloat(lines.shift()).toFixed(2);
+let vend = parseFloat(lines.shift()).toFixed(2);
 
-//var bonus =  sal + (vend * 0.15);
+sal = Number(sal);
+vend =  Number(vend);
 
-console.log(`${typeof func} ${typeof sal} ${typeof vend} `);
+const bonus =  sal + (vend * 0.15);
 
-//console.log(`TOTAL = R$ ${bonus}`);
+console.log(`TOTAL = R$ ${bonus.toFixed(2)}`);

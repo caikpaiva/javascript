@@ -9,4 +9,3 @@ var sal = hor*val;
 
 console.log(`NUMBER = ${func}`);
 console.log(`SALARY = U$ ${sal.toFixed(2)}`);
-

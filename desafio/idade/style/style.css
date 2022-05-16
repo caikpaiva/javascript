@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: white;
+    margin: 10px;
+}
+
+body{
+    background: rgb(42, 95, 165);
+    text-align: center;
+    font: normal 1rem Arial;
+}
+
+section{
+    width: 300px;
+    min-height: 180px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#txtano{
+    width: 70px;
+    text-align: center;
+}
+
+div{
+    padding: 10px;
+}
+
+div p {
+    padding: 5px;
+}
+
+#foto{
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+#btn{
+    padding: 5px;
+    background-color: darkgreen;
+    color: white;
+}
+
+footer{
+    margin: 10px;
+    color: white;
+}
